@@ -1,11 +1,15 @@
 .wrapper {
   display: grid;
-  grid-template-rows: 150px 300px 150px;
+  grid-template-rows: 200px 200px 200px;
   grid-template-columns: 1fr 1fr 1fr 2fr;
   grid-template-areas:  "header header header header"
-                        "content1 content1 content1 footer"
-                        "content2 content3 content4 footer";
+                        "content1 content2 content3 footer"
+                        "content4 content5 content6 footer";
   grid-gap: 10px;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 80px;
+  color: white;
+  text-align: center;
 }
 
 header {
@@ -14,23 +18,33 @@ header {
 }
 
 main {
-  background-color: #34EAA9;
+  background-color: #5EC9EA;
   grid-area: content1;
 }
 
 .C {
-  background-color: #36B6E8;
+  background-color: #E836B1;
   grid-area: content2;
 }
 
 .D{
-  background-color: #E836B1;
+  background-color: #F7B93C;
   grid-area: content3;
 }
 
 .E{
-  background-color: #F7B93C;
+  background-color: #ED5A5A;
   grid-area: content4;
+}
+
+.F{
+  background-color: #41EFB9;
+  grid-area: content5;
+}
+
+.G{
+  background-color: #92E542;
+  grid-area: content6;
 }
 
 footer{
@@ -41,11 +55,11 @@ footer{
 @media screen and (max-width: 480px) {
   .wrapper {
     display: grid;
-    grid-template-rows: 150px 300px 150px 150px;
+    grid-template-rows: 150px 100px 100px 150px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:  "header header header" 
-                          "content1 content1 content1"
-                          "content2 content3 content4"
+                          "content1 content2 content3"
+                          "content4 content5 content6"
                           "footer footer footer";
     grid-gap: 10px;
   }

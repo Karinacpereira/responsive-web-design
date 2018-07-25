@@ -5,6 +5,10 @@
   grid-template-areas:  "header header"
                         "content sidebar";
   grid-gap: 10px;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 80px;
+  color: white;
+  text-align: center;
 }
 
 header {
@@ -31,6 +35,10 @@ aside {
                           "content"
                           "sidebar";
     grid-gap: 10px;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 80px;
+    color: white;
+    text-align: center;
   }
 }
 
